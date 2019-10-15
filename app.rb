@@ -1,12 +1,7 @@
 require 'bundler'
 Bundler.require
 
+require_relative 'lib/scrapper'
 
 
-
-	def perform
-
-end
-
-perform
-
+Scrapper.new.perform
