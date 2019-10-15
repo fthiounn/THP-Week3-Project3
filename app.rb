@@ -1,7 +1,11 @@
 require 'bundler'
 Bundler.require
 
-require_relative 'lib/scrapper'
+require 'open-uri'
+require 'json'
+require 'csv'
+
+require_relative 'lib/app/scrapper'
 
 
 Scrapper.new.perform
