@@ -49,7 +49,7 @@ class Scrapper
 	#This method save our hash in Json
 	def save_as_json
 		File.open("./lib/db/emails.json","w") do |f|
-			@my_hash.each {|x| f.write(x.to_json)}
+			@my_hash.each {|x|  x.each{ |y| f.write(y.to_json)}}
 		  
 		end
 		puts "File successfuly saved as emails.json"
